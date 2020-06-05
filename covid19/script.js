@@ -33,9 +33,9 @@ function showdata(){
 	setTimeout(()=>{
 		document.querySelector(".cname").innerHTML=search.value;
 	let index = countries.indexOf(search.value)
-	document.getElementById("tconfirmed").innerHTML=mainobj[index].TotalConfirmed;
-	document.getElementById("trecovered").innerHTML=mainobj[index].TotalRecovered;
-	document.getElementById("tdeaths").innerHTML=mainobj[index].TotalDeaths;
+	document.getElementById("tconfirmed").innerHTML=mainobj[index].TotalConfirmed.toLocaleString();
+	document.getElementById("trecovered").innerHTML=mainobj[index].TotalRecovered.toLocaleString();
+	document.getElementById("tdeaths").innerHTML=mainobj[index].TotalDeaths.toLocaleString();
 		hideloader()
 	}, 1000)
 	
@@ -45,9 +45,9 @@ function showdata(){
 // 👇👇👇 Function To Show Global Data By Default 👇👇👇
 function showGlobalData(data){
 	
-	document.getElementById("tconfirmed").innerHTML=data.TotalConfirmed;
-	document.getElementById("trecovered").innerHTML=data.TotalRecovered;
-	document.getElementById("tdeaths").innerHTML=data.TotalDeaths
+	document.getElementById("tconfirmed").innerHTML=data.TotalConfirmed.toLocaleString();
+	document.getElementById("trecovered").innerHTML=data.TotalRecovered.toLocaleString();
+	document.getElementById("tdeaths").innerHTML=data.TotalDeaths.toLocaleString();
 
 
 }
