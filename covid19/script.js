@@ -99,8 +99,13 @@ else{
 		// 👇👇👇 Copy Search Suggestions And Put It Inside SearchBar When User Clicks It 👇👇👇
 
 		let listclick=document.getElementById('list');
-		listclick.addEventListener('click', ()=>{
-			search.value=listclick.innerHTML;
+		search.addEventListener('keyup', (e)=>{
+			if(e.keyCode === 13){
+				search.value=listclick.innerHTML;
+			}
+		})
+		ele.addEventListener('click', ()=>{
+			search.value=ele.innerHTML;
 			suggestionList.innerHTML="";
 		})
 	});
