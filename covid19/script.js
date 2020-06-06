@@ -9,12 +9,21 @@ btn.addEventListener('click', ()=>{
 		showdata()
 	}
 	else{
-		alert("Enter A Valid country")
+		alert("Enter A Valid Country Name")
 	}
+})
+btn.addEventListener('keyup', (e)=>{
+	if (e.keycode===3){
+		showdata()
+}
 })
 
 
+search.addEventListener("input", ()=>{
+	let svalue = search.value.toLowerCase();
+	search.value=svalue;
 
+})
 search.addEventListener("input", showcountry)
 
 function showloader(){
@@ -102,6 +111,7 @@ else{
 		search.addEventListener('keyup', (e)=>{
 			if(e.keyCode === 13){
 				search.value=listclick.innerHTML;
+				btn.focus()
 			}
 		})
 		ele.addEventListener('click', ()=>{

@@ -4,7 +4,7 @@
 }
 .mainna{
 	background-color: #00004d!important;
-	
+	back
 }
 
 
@@ -145,6 +145,14 @@
 	left: 0px;
 	opacity: 0.8;
 	display: none;
+
+}
+/*.errorr{
+	display: none;
+	position: absolute;
+	top: 0px;
+	transform: translateY(-100px);
+	box-shadow: 0 0 10px red;*/
 }
 @media only screen and (max-width: 900px){
 	.navmenuitems{
