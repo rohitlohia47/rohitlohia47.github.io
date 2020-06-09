@@ -1,0 +1,429 @@
+*{
+	padding: 0px;
+	margin:0px;
+	box-sizing: border-box;
+
+}
+
+header{
+	height: 115px;
+}
+
+.logo{
+	float: left;
+}
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a{
+    
+		text-decoration: none !important;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: bold;
+		color: #777777 !important;
+
+	}
+
+nav ul li a:hover{
+    color: #50934a !important;
+}    
+.activee{
+    color: #50934a !important;
+}
+.burger{
+	float: right;
+    /*display: none;*/
+}
+.headersec{
+	line-height: 115px;
+}
+
+.featured-area{
+	background:url('img/background.png') no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 530px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.featured-area>*{
+	z-index: 10;
+	position: relative;
+}
+.featured-area::before{
+	content:' ';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0px;
+	left: 0px;
+	background-color: rgba(0,0,0,0.75);
+	z-index: 0;
+	
+}
+.content{
+	text-align: center;
+
+}
+
+.content h1{
+	color: white;
+	text-transform: uppercase;
+	font-family: "Montserrat";
+	font-size: 60px;
+	max-width: 600px;
+
+}
+.content p{
+	color: white;
+	font-size: 20px;
+	margin: 45px 0;
+}
+.content button{
+	width: 200px;
+	height: 60px;
+	background-color: #7cc576;
+	color: white;
+	font-weight: bold;
+	padding:17px 11px;
+	border-radius: 30px;
+	border:none;
+	font-size: 16px;
+	transition: 0.5s;
+}
+.content button:hover{
+	background-color: #50934a;
+	
+}
+.services{
+    margin:100px 0px;
+    text-align: center;
+}
+.servicehead h1{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.servicehead p{
+    color:#777777;
+    margin-bottom: 89px;
+}
+.icon{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.card h3{
+    font-size: 20px;
+}
+.card p{
+    font-size: 14px;
+}
+.card{
+    border: none;
+    transition:0.5s;
+}
+.card:hover{
+    box-shadow: 0 0 30px black;
+    transform: translateY(-10px);
+    z-index: 5;
+}
+
+.showcase{
+    height: 616px;
+    width: 100%;
+    background: url('img/imagebck.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.showcase-content{
+    color: white;
+    padding: 100px 0 100px 300px;
+}
+.showcase-content h1{
+    font-size: 40px;
+    margin-bottom: 47px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.showcase-content h1 span{
+    color: #7cc576;
+}
+.showcase-content p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.bullet {
+    height:40px;
+}
+.bullet .tick{
+    float: left;
+    margin-right:10px;
+}
+.learn-more{
+    font-weight: bold;
+    margin-top: 73px;
+}
+.learn-more a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.learn-more a:hover{
+    color: #7cc576;
+    cursor: pointer;
+}
+.project{
+    height:825px;
+    width: 100%;
+    background-image: url('img/ipad.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    
+    padding:100px 0 50px 0;
+}
+.project-heading{
+    text-align: center;
+}
+.project-heading h1{
+    text-transform: uppercase
+}
+.project-heading p{
+    margin-bottom: 80px;
+}
+
+.project-content{
+    height: 525px;
+    max-width: 525px;
+}
+.project-content p{
+    margin-bottom: 25px;
+}
+.project-content h6, h5{
+    font-weight: bold;
+}
+.project-bullets{
+    margin-bottom: 15px;
+}
+.project-icon{
+    float: left;
+    margin-right: 20px;
+}
+.bullets{
+    padding: 12px 0 0 0;
+}
+.project-content a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    transition: 0.4s;
+    
+}
+
+.project-content a:hover{
+    color: #7cc576;
+}
+.values{
+    width: 100%;
+    min-height: 560px;
+    background-color: #f9f9f9;
+    padding: 100px 0 100px 0;
+    position: relative;
+}
+.values-col{
+    text-align: center
+}
+.values-icon{
+    margin-bottom: 20px;
+}
+.line1{
+    position: absolute;
+    right: 670px;
+    top:275px
+}
+.line2{
+    position: absolute;
+    top: 275px;
+    left: 670px;
+    
+}
+.chats{
+    position: relative;
+    margin: 70px 0 40px 0;
+    
+}
+
+.chats img{
+    width: 100%
+}
+.chats p{
+    position: absolute;
+    top: 80px;
+    left: 370px;
+    right: 40px;
+    font-size: 20px
+}
+.chats .para2{
+    position: absolute;
+    color: #7cc576;
+    font-size: 20px;
+    top: 210px;
+    left: 480px;
+
+    
+}
+
+.label{
+    background-color: #7cc576;
+    min-height: 250px;
+    padding:70px 0 70px 0;
+    
+}
+.label h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Montserrat;
+    color: white;
+    text-align: center;
+}
+
+.btndiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.contact{
+    width: 200px;
+    background:transparent ;
+    border:2px solid white ;
+    border-radius: 10px;
+    padding:12px 28px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+ 
+    
+}
+.logos{
+    background-color: #ffffff;
+    min-height: 165px;
+    padding: 60px 0;
+    
+}
+
+.imgcenter{
+    text-align: center;
+    padding: 30px;
+}
+
+.footer{
+    min-height: 364px;
+    background-color: #222222;
+    padding:57px 0;
+    
+}
+.location{
+    height: 50px;
+    float: left;
+    
+}
+.emailicon{
+    font-size: 23px;
+}
+.tweet{
+    height: 50px;
+    float: left;
+}
+.footer-end{
+    height: 50px;
+}
+.social-iconss span i{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+}
+.social-iconss p{
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+.social-iconss>span>i{
+    margin-top: 30px;
+        margin-right:10px;
+    font-size: 
+}
+
+.footerpad{
+    padding: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1100px){
+    .showcase-content{
+    color: white;
+    padding: 50px 0 100px 100px;
+}
+    .project{
+    height:825px;
+    width: 100%;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    
+    padding:100px 0 50px 0;
+}
+    .project{
+        padding:40px 0 50px 0;
+    }
+    .project-content{
+        padding: 10px
+    }
+    .line1, .line2{
+        display: none;
+    }
+
+    .footer-end{
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
