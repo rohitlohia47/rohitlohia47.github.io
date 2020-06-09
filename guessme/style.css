@@ -13,7 +13,7 @@ body
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
-	overflow: hidden;
+	
 
 }
 header {
@@ -104,8 +104,9 @@ header {
 
 .submit{
 
-	margin-left: 200px;
-	margin-top: 50px;
+	/*margin-left: 200px;
+	margin-top: 50px;*/
+	margin: 10px auto;
 	font-size: 30px;
 	padding: 7px 40px;
 	border-radius: 40px;
@@ -115,6 +116,17 @@ header {
 }
 .credits{
 	background-color: black;
+}
+
+.btnwrap{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.middle{
+	max-width:80%;
+	margin: auto;
+	padding: 0;
 }
 
 
@@ -134,7 +146,7 @@ header{
 }
 .box{
 
-	height: 450px;
+	min-height: 450px;
 	width:100%;
 	background-color: white;
 	margin:40px auto;
@@ -154,9 +166,9 @@ header{
 }
 
 .submit{
-	margin-left: 80px;
-	margin-top: 20px;
+	margin: 10px auto;
 	font-size: 25px;
+	width: 50%;
 }
 .box h3{
 	margin-top: 20px;
